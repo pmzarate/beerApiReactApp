@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import LikeButton from './likebutton';
+//import PairingList from './pairingList';
 
 class App extends Component {
   constructor(props) {
@@ -41,7 +42,7 @@ render() {
                   <h2>"{beer.tagline}"</h2> <br/>
                   <p> {beer.description} <br/></p>
                   <h4>First Brewed: {beer.first_brewed}</h4>
-                  <h5>Foods to Pair with: <ul>{beer.food_pairing}</ul></h5>
+                  <h5>Foods to Pair with: {beer.food_pairing} </h5>
                   <LikeButton/>
                 <br/>
                 <br/>
